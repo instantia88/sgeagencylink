@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SG AGENCY</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html, body {
+      background: transparent;
+      color: white;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .content {
+      text-align: center;
+    }
+
+    .logo-text {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      animation: fadeInUp 1.5s ease-out forwards;
+      opacity: 0;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+      animation: fadeInUp 2s ease-out forwards;
+      opacity: 0;
+    }
+
+    .social-icons a img {
+      width: 36px;
+      height: 36px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons a:hover img {
+      transform: scale(1.2);
+    }
+
+    .button {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 1rem 2rem;
+      margin: 0.5rem auto;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 400px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-align: center;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      animation: fadeInUp 2.5s ease-out forwards;
+      opacity: 0;
+    }
+
+    .button:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-3px);
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #aaa;
+      animation: fadeInUp 3s ease-out forwards;
+      opacity: 0;
+      text-align: center;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .logo-text {
+        font-size: 1.6rem;
+      }
+      .button {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+      }
+      .social-icons {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="logo-text">SG AGENCY</div>
+
+    <div class="social-icons">
+      <a href="https://www.tiktok.com/@yourusername" target="_blank" title="TikTok">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" />
+      </a>
+      <a href="https://www.instagram.com/yourusername" target="_blank" title="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" />
+      </a>
+    </div>
+
+    <div class="button" onclick="window.open('https://wa.me/6281234567890?text=Halo%20admin%20SGE%20Agency%20saya%20ingin%20...', '_blank')">ADMIN 1</div>
+    <div class="button" onclick="window.open('https://wa.me/6289876543210?text=Halo%20admin%20SGE%20Agency%20saya%20ingin%20...', '_blank')">ADMIN 2</div>
+
+    <footer>
+      • © 2025 Sola Gratia Entertainment AGENCY • <br>
+      All Rights Reserved
+    </footer>
+  </div>
+</body>
+</html>
